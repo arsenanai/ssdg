@@ -133,14 +133,6 @@ var app = new Vue({
       code:'mailto:ss.dessign.group@gmail.com',
       view:'ss.dessign.group@gmail.com'
     },
-    portfolioList:[
-      {
-        thumbnail:'',
-        fullsize:'',
-        title:'',
-        description:'',
-      },
-    ],
   },
   methods:{
     setTitle: function(){
