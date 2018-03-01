@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="наружная,реклама,астана,вывески,баннер,объемные буквы,жарнама,сыртқы жарнама,указатели,штендеры,стенды,крышная реклама,реклама на фасаде,фасад,логотип,название,бизнес, раскрутка,увеличить клиентов,как раскрутить бизнес,бегущая строка,таблички,режим работы,наружка, оформление в астане,фотозона,пресс стена,буквы,лайтбокс,световой короб">
+    <meta name="description" content="Занимаемся изготовлением различного вида наружной рекламы в Астане">
+    <meta name="author" content="">
+
+    <title></title>
+
+    <!-- Bootstrap core CSS -->
+    <style type="text/css">
+      [v-cloak] > * { display:none; }
+      [v-cloak]::before { content: "loading..."; }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom fonts for this template -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+    <div id="app" v-cloak>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">{{company}}</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">{{about[tongue]}}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">{{servicesMenu[tongue]}}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">{{portfolio[tongue]}}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">{{contacts[tongue]}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <p class="text-uppercase text-volumetric">
+              {{greeting[tongue]}}
+            </p>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">{{greetingMore[tongue]}}</p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#about">{{findOutMore[tongue]}}</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">{{whatYouNeed[tongue]}}</h2>
+            <hr class="light my-4">
+            <p class="mb-4">{{whatYouNeedMore[tongue]}}</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#services">{{getStarted[tongue]}}</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="text-white">{{infoTitle[tongue]}}</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 text-center text-white" v-for="info in infosList">
+            <div class="service-box mt-5 mx-auto text-faded">
+              <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
+              <p class="mb-0">{{info[tongue]}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">{{atYourService[tongue]}}</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 text-center" v-for="service in servicesList">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">{{service.title[tongue]}}</h3>
+              <p class="mb-0">{{service.description[tongue]}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-0" id="portfolio">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/11.jpg">
+              <img class="img-fluid" src="img/portfolio/t12.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <img class="img-fluid" src="img/portfolio/t11.jpg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/21.jpg">
+              <img class="img-fluid" src="img/portfolio/t21.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                    <i class="fas fa-expand-arrows-alt fa-5x"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/31.jpg">
+              <img class="img-fluid" src="img/portfolio/t31.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <img class="img-fluid" src="img/portfolio/t32.jpg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/41.jpg">
+              <img class="img-fluid" src="img/portfolio/t41.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <img class="img-fluid" src="img/portfolio/t42.jpg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/51.jpg">
+              <img class="img-fluid" src="img/portfolio/t51.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <img class="img-fluid" src="img/portfolio/t52.jpg" alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/61.jpg">
+              <img class="img-fluid" src="img/portfolio/t61.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <img class="img-fluid" src="img/portfolio/t62.jpg" alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/71.jpg">
+              <img class="img-fluid" src="img/portfolio/t71.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <img class="img-fluid" src="img/portfolio/t72.jpg" alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/81.jpg">
+              <img class="img-fluid" src="img/portfolio/t81.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <img class="img-fluid" src="img/portfolio/t82.jpg" alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/91.jpg">
+              <img class="img-fluid" src="img/portfolio/t91.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <img class="img-fluid" src="img/portfolio/t92.jpg" alt="">
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">{{getInTouch[tongue]}}</h2>
+            <hr class="my-4">
+            <p class="mb-5">{{getInTouchMore[tongue]}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a :href="phone.code" class="btn btn-primary">
+                <i class="fa fa-phone"></i> {{phone.view}}
+              </a>
+            </p>
+          </div>
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fas fa-phone fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a :href="whatsapp.code" class="btn btn-primary">
+                <i class="fab fa-whatsapp"></i> {{whatsapp.view}} 
+              </a>
+            </p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fas fa-envelope-o fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a :href="mail.code" class="btn btn-primary text-lowercase">
+                <i class="fa fa-envelope"></i> {{mail.view}}
+              </a>
+            </p>
+          </div>
+        </div>
+        <br>
+        <div class="row justify-content-md-center">
+          <div>
+            <iframe src="https://yandex.kz/map-widget/v1/-/CBUANAxgLD" width="560" height="400" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- Plugin JavaScript -->
+    <!--<script src="vendor/jquery-easing/jquery.easing.min.js"></script>-->
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+
+</html>
