@@ -48,8 +48,15 @@ h6 {
 
 @media (min-width: 200px) {
   .text-volumetric {
-    font-size: 40px !important;
+    font-size: 25px !important;
     text-shadow: 2px 2px 5px yellow !important;
+  }
+}
+
+@media (min-width: 500px) {
+  .text-volumetric {
+    font-size: 50px !important;
+    text-shadow: 3px 3px 7px yellow !important;
   }
 }
 
